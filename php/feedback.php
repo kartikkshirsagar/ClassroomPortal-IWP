@@ -10,15 +10,14 @@ $password = "kartik";
 $dbname = "kartikkshirsagar";
 $id = $_POST['ID'];
 $subject = $_POST['subject'];
-$questioncode = $_POST['questioncode'];
-$rating = $_POST['rating'];
+$mrating = $_POST['mrating'];
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$sql = "INSERT INTO Ratings (College ID, Subject, Question Code, Rating)
-VALUES ($id, $subject, $questioncode,$rating)";
+$sql = "INSERT INTO Ratings (College ID, Subject, Mean Rating)
+VALUES ($id, $subject,$mrating)";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
