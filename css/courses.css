@@ -10,6 +10,9 @@ span {
     justify-content: center;
     box-shadow: 5px 5px 5px grey;
 }
+body{
+    background-color:#333333 ;
+}
 
 span.flex_cont {
     background-color: grey;
