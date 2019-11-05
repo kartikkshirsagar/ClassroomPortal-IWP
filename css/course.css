@@ -1,0 +1,51 @@
+span {
+    padding: 10px;
+    margin: 5px;
+    width: 10%;
+    border-radius: 20px;
+    background-color: #0984e3;
+    text-align: center;
+    color: white;
+    display: block;
+    justify-content: center;
+    box-shadow: 5px 5px 5px grey;
+}
+
+span.flex_cont {
+    background-color: grey;
+    display: flex;
+}
+
+div.cont {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #2f3640;
+    display: none;
+    width: 70%;
+    box-shadow: 10px 10px 5px grey;
+}
+
+div.prop {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #dcdde1;
+    display: inline;
+    width: 70%;
+}
+
+div.books {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: grey;
+    display: inline;
+    width: 30%;
+}
+
+span:hover+div {
+    display: flex;
+    float: right;
+}
+
+span:hover.el {
+    transform: scale(1.1);
+}
