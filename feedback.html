@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
   <body>
 
 <!-----------------------------------------------NAVBAR---------------------------------------------------------------->
@@ -50,7 +53,7 @@
                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
                  <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
              </form>
-         </div>
+            </div>
      </nav>
     </body>
 </html>
@@ -59,12 +62,185 @@
 
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-3">Fluid jumbo heading</h1>
-        <p class="lead">Jumbo helper text</p>
+        <h1 class="display-3">Welcome</h1>
+        <p class="lead">This is a feedback specifically designed for 3rd Semester CSE students.</p>
         <hr class="my-2">
-        <p>More info</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="" role="button">Jumbo action name</a>
+        <p>This form was designed keeping in mind the crucial aspects of taking feedback and hey it saves paper too ;)</p>
         </p>
     </div>
 </div>
+<!-----------------------------------------------feedback form------------------------------------------------------------>
+
+<div class="container mt-3">
+    <center><h2>FeedBack Form</h2></center>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#DSPD">DSPD</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#PTSM">PTSM</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#DCMP">DCMP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#IWP">IWP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#DMGT">DMGT</a>
+      </li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="DSPD" class="tab-pane fade">
+        <form  action="#php" class="mt-3" name="DSPD">
+                <p>Q1:How good was the course content? </p>
+                <input type="number" max="5" min="1" name="1a" id="a" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q2:How clear were the course outcomes to you?</p>
+                <input type="number" max="5" min="1"  name="1a" id="b" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q3:How good was the additional course material that was provided?  </p>
+                <input type="number" max="5" min="1"  name="1a" id="c" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q4:How good was the course instructor? </p>
+                <input type="number" max="5" min="1"  name="1a" id="d" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q5:How systematic was the course set? </p>
+                <input type="number" max="5" min="1"  name="1a" id="e" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <input type="text" style="visibility: hidden;" name="mrating" id="dspdmean">
+                <input type="submit" class="bg-dark text-white mt-3">
+              </form>
+    </div>
+
+    <div id="PTSM" class="tab-pane fade">
+      <form  action="#php" class="mt-3" name="PTSM">
+              <p>Q1:How good was the course content?  </p>
+              <input type="number" max="5" min="1"  name="1a" id="1" value="0" placeholder="SELECT FROM 1 TO 5">
+              <br>
+              <p>Q2:How clear were the course outcomes to you? </p>
+              <input type="number" max="5" min="1"  name="1a" id="2" value="0" placeholder="SELECT FROM 1 TO 5">
+              <br>
+              <p>Q3:How good was the additional course material that was provided? </p>
+              <input type="number" max="5" min="1"  name="1a" id="3" value="0" placeholder="SELECT FROM 1 TO 5">
+              <br>
+              <p>Q4:How good was the course instructor? </p>
+              <input type="number" max="5" min="1"  name="1a" id="4" value="0" placeholder="SELECT FROM 1 TO 5">
+              <br>
+              <p>Q5:How systematic was the course set?</p>
+              <input type="number" max="5" min="1"  name="1a" id="5" value="0" placeholder="SELECT FROM 1 TO 5">
+              <br>
+              <input type="text" style="visibility: hidden;" name="mrating" id="ptsmmean">
+              <input type="submit" class="bg-dark text-white mt-3">
+      </form>
+  </div>
+
+    <div id="DCMP" class="tab-pane fade">
+        <form  action="#php" class="mt-3" name="DCMP">
+                <p>Q1: How good was the course content? </p>
+                <input type="number" max="5" min="1"  name="1a" id="11" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q2:How clear were the course outcomes to you? </p>
+                <input type="number" max="5" min="1"  name="1a" id="22" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q3: How good was the additional course material that was provided?</p>
+                <input type="number" max="5" min="1"  name="1a" id="33" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q4: How good was the course instructor?</p>
+                <input type="number" max="5" min="1"  name="1a" id="44" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q5: How systematic was the course set?</p>
+                <input type="number" max="5" min="1"  name="1a" id="55" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <input type="text" style="visibility: hidden;" name="mrating" id="dcmpmean">
+                <input type="submit" class="bg-dark text-white mt-3">
+        </form>
+    </div>
+    <div id="IWP" class="tab-pane fade">
+        <form  action="#php" class="mt-3" name="IWP"> 
+                <p>Q1:How good was the course content?  </p>
+                <input type="number" max="5" min="1"  name="1a" id="111" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q2:How clear were the course outcomes to you? </p>
+                <input type="number" max="5" min="1"  name="1a" id="222" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q3:How good was the additional course material that was provided? </p>
+                <input type="number" max="5" min="1"  name="1a" id="333" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q4: How good was the course instructor?</p>
+                <input type="number" max="5" min="1"  name="1a" id="444" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q5:How systematic was the course set? </p>
+                <input type="number" max="5" min="1"  name="1a" id="555" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <input type="text" style="visibility: hidden;" name="mrating" id="iwpmean">
+                <input type="submit" class="bg-dark text-white mt-3">
+        </form>
+    </div>
+    <div id="DMGT" class="tab-pane fade">
+        <form action="#php" class="mt-3" name="DMGT">
+                <p>Q1:How good was the course content?  </p>
+                <input type="number" max="5" min="1"  name="1a" id="aa" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q2:How clear were the course outcomes to you? </p>
+                <input type="number" max="5" min="1"  name="1a" id="bb" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q3:How good was the additional course material that was provided? </p>
+                <input type="number" max="5" min="1"  name="1a" id="cc" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q4:How good was the course instructor? </p>
+                <input type="number" max="5" min="1"  name="1a" id="dd" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <p>Q5:How systematic was the course set? </p>
+                <input type="number" max="5" min="1"  name="1a" id="ee" value="0" placeholder="SELECT FROM 1 TO 5">
+                <br>
+                <input type="text" style="visibility: hidden;" name="mrating" id="dmgtmean">
+                <input type="submit" class="bg-dark text-white mt-3">
+        </form>
+    </div>
+</div>
+<script>
+var a1 = document.getElementById(a).value;
+var a2 = document.getElementById(b).value;
+var a3 = document.getElementById(c).value;
+var a4 = document.getElementById(d).value;
+var a5 = document.getElementById(e).value;
+var dspdmean = (a1+a2+a3+a4+a5)/5;
+document.getElementById(dspdmean).value = dspdmean;
+var b1 = document.getElementById(1).value;
+var b2 = document.getElementById(2).value;
+var b3 = document.getElementById(3).value;
+var b4 = document.getElementById(4).value;
+var b5 = document.getElementById(5).value;
+var ptsmmean = (b1+b2+b3+b4+b5)/5;
+document.getElementById(ptsmmean).value = ptsmmean;
+var c1= document.getElementById(11).value;
+var c2 = document.getElementById(22).value;
+var c3 = document.getElementById(33).value;
+var c4 = document.getElementById(44).value;
+var c5 = document.getElementById(55).value;
+var dcmpmean = (c1+c2+c3+c4+c5)/5;
+document.getElementById(dcmpmean).value = dcmpmean;
+var d1= document.getElementById(111).value;
+var d2 = document.getElementById(222).value;
+var d3 = document.getElementById(333).value;
+var d4 = document.getElementById(444).value;
+var d5 = document.getElementById(555).value;
+var iwpmean = (d1+d2+d3+d4+d5)/5;
+document.getElementById(iwpmean).value = iwpmean;
+var e1= document.getElementById(aa).value;
+var e2 = document.getElementById(bb).value;
+var e3 = document.getElementById(cc).value;
+var e4 = document.getElementById(dd).value;
+var e5 = document.getElementById(ee).value;
+var dmgtmean = (e1+e2+e3+e4+e5)/5;
+document.getElementById(dmgtmean).value = dmgtmean;
+
+</script>
+
+
+
